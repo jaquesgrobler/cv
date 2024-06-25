@@ -1,5 +1,12 @@
 \documentclass[9pt]{extarticle}
 
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks=true,urlcolor=linkcolor]{hyperref}
+\usepackage[default,scale=0.95]{opensans} % Add this line for OpenSans
+
+
+% Rest of your preamble and document...
+
 % \documentclass[10pt]{article} %Sets the default text size to 11pt and class to article.
 %------------------------Dimensions--------------------------------------------
 \pagenumbering{gobble}% Remove page numbers (and reset to 1)
@@ -12,7 +19,13 @@
 \headsep=0pt %Increase to increase white space in between headers and the top of the page
 \textheight=9.5in %How tall the text body is allowed to be on each page
 
-\usepackage{xcolor}
+% \usepackage{xcolor}
+\usepackage[table]{xcolor} % Make sure it's included, possibly already there for linkcolor
+
+\definecolor{linkcolor}{RGB}{32,121,199}
+\definecolor{textcolor}{HTML}{333333} % Define the base text color
+
+\AtBeginDocument{\color{textcolor}} % Set the default text color for the document
 
 \definecolor{linkcolor}{RGB}{32,121,199}
 
@@ -118,7 +131,7 @@ ingestion, API and a commissioning-webapp for field services engineers in React.
 \begin{itemize}
 \setlength\itemsep{0.05em}
 
-\item Dedicated engineer on \href{https://scikit-learn.org/stable/}{\texttt{scikit-learn}} machine learning library in scientific Python, \hfill Saclay, France \\
+\item Dedicated engineer on \href{https://scikit-learn.org/stable/}{scikit-learn} machine learning library in scientific Python, \hfill Saclay, France \\
 website building and community support.
 \item Research engineer to Team Parietal of INRIA to assist processing neuroscience data.
 
@@ -164,12 +177,11 @@ utilities development using C++ and the scientific Python libraries.
 \\
 
 \noindent
-{\bf Advocate of:} component-driven development, responsive and accessible design, TanStack, functional programming and
-\tab \tab cross-functional collaboration between design and development teams,\\
-\tab \tab Importance of user experience (UX) design principles, high-quality code-reviews\\ \\
+{\bf Languages:} \smallspace Native Speaker: English, Afrikaans. \\
+\tab \tab Strong Professional Proficiency: Spanish, German. \\
+\tab \tab Limited Professional Proficiency: French \\ \\
 \noindent
-{\bf Technologies:} \textbf{Node.JS, Typescript, React, PostGres, \\
-\tab \tab \smallspace  Docker }, Nextjs, Keycloak, Lit, Java, Python, Nextjs, RabbitMQ, Auth0, \\
-
+{\bf Technologies:} \textbf{Node.JS, Typescript, React, SQL, Docker,}\\
+\tab \tab\ Nextjs, Deno, Keycloak, Lit, Java, Python, Nextjs, RabbitMQ, Auth0
 
 \end{document}
